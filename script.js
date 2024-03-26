@@ -1,8 +1,26 @@
+$(".click1").click(function(){
+  $(".dragon").toggleClass("hide");
+});
 
+$( function () {
+  $(".draggable").draggable();
+});
 
-
-
-
+$(".click2").click(function(){
+  $(".letter").toggleClass("hide");
+});
+$(".off").click(function(){
+  $(".photo1").toggleClass("hide");
+});
+$(".off2").click(function(){
+  $(".photo1").toggleClass("pulse");
+});
+$(".off3").click(function(){
+  $(".photo1").toggleClass("rotate");
+});
+$(".off4").click(function(){
+  $(".photo1").removeClass("rotate pulse hide");
+});
 
 
 
