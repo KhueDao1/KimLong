@@ -3,7 +3,8 @@ $(".click1").click(function(){
 });
 
 $( function () {
-  $(".draggable").draggable();
+  $(".draggable").draggable({ snap:true});
+  $(".draggable").draggable({ containment:"parent"});
 });
 
 $(".click2").click(function(){
@@ -22,7 +23,26 @@ $(".off4").click(function(){
   $(".photo1").removeClass("rotate pulse hide");
 });
 
+$(".quizbtn").click(function(){
+  $(".heart").toggleClass("hide");
+});
 
+$( function() {
+  $("#dialog").dialog({
+    autoOpen:false,
+    show:{
+      effect:"fold",
+      duration:800
+    },
+    hide:{
+      effect:"fold",
+      duration:800
+    }
+  });
+  $("quizbtn").on("click", function(){
+    $("#dialog").dialog("open");
+  });
+});
 
 
 // const canvas = document.querySelector('canvas');

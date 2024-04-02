@@ -150,6 +150,38 @@ button:active{
     translate: 60%;
     animation-play-state: paused;
 }
+
+.array{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:2%;
+    border: solid 2px aquamarine;
+    transition: 800ms ease-out;
+}
+.array.gradient:hover{
+    translate: 20%;
+}
+
+.quizbtn{
+    color:aliceblue;
+    font-size: 2vh;
+    text-align: left;
+    height:fit-content;
+    width: fit-content;
+    background-color: transparent;
+}
+.heart{
+    max-width: 90vw;
+    min-height:90%;
+    margin-left: -4%;
+    margin-top: -20%;
+    z-index: -5;
+}
+
+
+
+
 @keyframes background-pan{
     0%{
         background-position: 0% center;
